@@ -1,0 +1,28 @@
+﻿<form #form ="ngForm">
+  
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Create Poll</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-8">
+      <label>Opposition Team</label>
+      <input  class="form-control" id="teamName" name="teamName" placeholder="Opposition Team Name"  minlength="3" required ngModel>
+    </div>
+  </div>
+
+  <button [disabled]="!form.valid" (click)="submitAvailability()" type="submit" value="Upload" class="btn waves-effect waves-light"  id="submit">Submit</button>
+</form>
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+      <input name="first" ngModel required #first="ngModel">
+      <input name="last" ngModel>
+      <button>Submit</button>
+</form>
+    
+    <p>First name value: {{ first.value }}</p>
+    <p>First name valid: {{ first.valid }}</p>
+    <p>Form value: {{ f.value | json }}</p>
+    <p>Form valid: {{ f.valid }}</p>

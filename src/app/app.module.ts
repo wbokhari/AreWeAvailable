@@ -7,7 +7,8 @@ import { DashboardComponent }   from './dashboard.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 import { HeroesComponent }      from './heroes.component';
 import { HeroService }          from './hero.service';
-import { PollComponent }        from './poll.component';
+import { PollComponent }     from './poll.component';
+import { CreatePollComponent }     from './create-poll.component';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -22,7 +23,8 @@ import { AppRoutingModule }     from './app-routing.module';
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
-    PollComponent
+    PollComponent,
+    CreatePollComponent
   ],
   providers: [ HeroService ],
   bootstrap: [ AppComponent ]

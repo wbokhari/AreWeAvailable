@@ -8,6 +8,7 @@
      <a routerLink="/dashboard">Dashboard</a>
      <a routerLink="/heroes">Heroes</a>
      <a routerLink="/poll">Poll</a>
+     <a routerLink="/create-poll">Create Poll</a>
    </nav>
    <router-outlet></router-outlet>
  `,

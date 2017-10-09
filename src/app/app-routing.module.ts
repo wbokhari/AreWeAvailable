@@ -6,13 +6,15 @@ import { HeroesComponent }      from './heroes.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 
 import { PollComponent } 		from './poll.component';
+import { CreatePollComponent } 		from './create-poll.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard',  component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes',     component: HeroesComponent },
-  { path: 'poll', component: PollComponent}
+  { path: 'poll', component: PollComponent},
+  { path: 'create-poll', component: CreatePollComponent}
 ];
 
 @NgModule({
