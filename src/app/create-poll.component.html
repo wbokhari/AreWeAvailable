@@ -1,5 +1,5 @@
-﻿<form #form ="ngForm">
-  
+<form #form ="ngForm">
+
   <div class="row">
     <div class="col-xs-12">
       <h2>Create Poll</h2>
@@ -11,18 +11,29 @@
       <label>Opposition Team</label>
       <input  class="form-control" id="teamName" name="teamName" placeholder="Opposition Team Name"  minlength="3" required ngModel>
     </div>
-  </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-xs-8">
+      <label>Enter Location</label>
+      <input  class="form-control" id="teamName" name="teamName" minlength="3" required ngModel>
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-xs-2">
+      <label>Enter Date</label>
+      <input  class="form-control" id="teamName" name="teamName" type="date" minlength="3" required ngModel>
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-xs-2">
+      <label>Enter Start Time</label>
+      <input  class="form-control" id="teamName" name="teamName" type="time" minlength="3" required ngModel>
+    </div>
+  </div> <br>
+
 
   <button [disabled]="!form.valid" (click)="submitAvailability()" type="submit" value="Upload" class="btn waves-effect waves-light"  id="submit">Submit</button>
 </form>
-
-<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
-      <input name="first" ngModel required #first="ngModel">
-      <input name="last" ngModel>
-      <button>Submit</button>
-</form>
-    
-    <p>First name value: {{ first.value }}</p>
-    <p>First name valid: {{ first.valid }}</p>
-    <p>Form value: {{ f.value | json }}</p>
-    <p>Form valid: {{ f.valid }}</p>

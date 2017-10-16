@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
 
 @Component({
@@ -22,11 +22,6 @@ export class CreatePollComponent implements OnInit {
   }
 
   submitAvailability(): void {
-    console.log("submitted to captain ");
-  }
-
-  onSubmit(f: NgForm) {
-    console.log(f.value.first);  // { first: '', last: '' }
-    console.log(f.valid);  // false
+    console.log("Poll created ", );
   }
 }

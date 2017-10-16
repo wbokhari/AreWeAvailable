@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -7,7 +7,7 @@
    <nav>
      <a routerLink="/dashboard">Dashboard</a>
      <a routerLink="/heroes">Heroes</a>
-     <a routerLink="/poll">Poll</a>
+     <a routerLink="/poll">Submit Poll</a>
      <a routerLink="/create-poll">Create Poll</a>
    </nav>
    <router-outlet></router-outlet>
